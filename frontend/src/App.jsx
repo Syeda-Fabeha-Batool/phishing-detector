@@ -12,7 +12,8 @@ function App() {
     }
 
     try {
-      const response = await fetch("http://your-backend.onrender.com/check", {
+      const response = await fetch(
+        "http://phishing-backend.onrender.com/check", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),

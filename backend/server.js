@@ -40,7 +40,7 @@ app.post("/check", (req, res) => {
 
   res.json({ score, status, reasons });
 });
-
-app.listen(3000, () => {
-  console.log("Backend server running on http://localhost:3000");
+const PORT= process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
